@@ -1,0 +1,8 @@
+server:
+  port: 6001
+eureka:
+  client:
+    register-with-eureka: false #不想eureka注册自己
+    service-url:
+      #做集群需要关联集群的eureka服务器的地址 多个eureka服务,用逗号隔开
+      defaultZone: http://eureka1:7001/eureka/,http://eureka2:7002/eureka/,http://eureka3:7003/eureka/
